@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="../chart.js-3.9.1/package/dist/chart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js" integrity="sha512-d6nObkPJgV791iTGuBoVC9Aa2iecqzJRE0Jiqvk85BhLHAPhWqkuBiQb1xz2jvuHNqHLYoN3ymPfpiB1o+Zgpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Tugas Chart JS</title>
+  </head>
+
+  <body>
+    <div class="outer-wrapper flex justify-center flex-wrap">
+      <h1 class="font-bold text-4xl mt-16 text-center max-w-5xl">Dashboard Analisa Bahan Pangan dan Komoditi di Provinsi Jakarta</h1>
+      <div class="dashboard w-full flex justify-center my-16">
+        <div class="wrapper shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] p-6 rounded-lg max-w-4xl w-full">
+          <div class="flex mx-auto my-5">
+            <canvas id="scatterChart" class="h-3xl"></canvas>
+          </div>  
+          <div class="flex mx-auto my-10">
+            <canvas id="barChart"></canvas>
+          </div>  
+          <div class="flex flex-wrap justify-center my-5">
+            <div class="flex w-96 mx-auto my-5">
+              <canvas id="pieChart"></canvas>
+            </div>
+            <div class="flex w-96 mx-auto my-5">
+              <canvas id="donutChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
